@@ -1,0 +1,117 @@
+.container-column {
+    flex-direction: column;
+    gap: 20px;
+}
+.container-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient-background {
+    background-image: linear-gradient(30deg,  #2d283e, #2c263f);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+@keyframes gradient-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    text-align: center;
+    font-family: "Arvo", cursive;
+    color: #802BB1;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px #4c459d;
+}
+
+h2 {
+    font-size: 2rem;
+}
+.body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Arvo", cursive;
+    color: #d1d7e0;
+    padding: 20px;
+}
+
+body {
+    margin-bottom: 100%;
+}
+
+button {
+    font-family: "Arvo", cursive;
+    color: #d1d7e0;
+    background-color: #4c495e;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+p {
+    font-size: larger;
+}
+
+hr {
+    border-top: 3px solid #4c495e;
+    visibility: hidden;
+}
+@media (max-width: 1250px) {
+    .container-row {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .container-column {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px #4c459d;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    .body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: "Arvo", cursive;
+        color: #d1d7e0;
+        padding: 20px;
+    }
+    
+    body {
+        margin-bottom: 100%;
+    }
+
+    .dice {
+        margin-top: 20px;
+        height: 250px;
+    }
+    button {
+        font-family: "Arvo", cursive;
+        color: #d1d7e0;
+        background-color: #4c495e;
+        border-radius: 4px;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+}
