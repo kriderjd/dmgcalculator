@@ -10,6 +10,8 @@ function Attack() {
 }
 
 function MarilithAttack() {
+    var slashAudio = new Audio("./slash.mp3");
+    slashAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
         hr.style.visibility = "visible";
